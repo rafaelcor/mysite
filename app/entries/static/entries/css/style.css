@@ -1,0 +1,54 @@
+.col-lg-12 {
+	margin-top: 100px;
+	margin-left: 410px;
+	width:400px;
+}
+
+.col-lg-12 button{
+	height: 28px;
+	line-height: 26px;
+}
+
+#ent2{
+    resize: none;
+    width:442px;
+    height:300px;
+}
+
+.logout{
+    margin-left: 1060px;
+}
+
+#button_send{
+    height: 25px;
+    margin-left: 600px;
+}
+
+p label{
+    display:none;
+}
+
+#mce_18{
+    display: none;
+}
+#mce_23{
+    display: none;
+}
+#mce_32{
+    display: none;
+}
+
+#loading label{
+    margin-left: 150px;
+}
+#loading img{
+    margin-left: 175px;
+}
+
+#ent2 br{
+    display:none;
+}
+
+.label{
+    border-radius: 5px;
+}

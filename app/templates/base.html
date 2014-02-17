@@ -1,0 +1,58 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="{% static 'css/normalize.css'%}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/fonta-wesome/css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block css %}{% endblock css %}
+</head>
+<body>
+    <div class="bs-example">
+        <form>
+            <!--Default buttons with dropdown menu-->
+            <div class="btn-group">
+                <button class="btn btn-default">Home</button>
+            </div>
+            <!--Primary buttons with dropdown menu-->
+            <div class="btn-group">
+                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">About Me <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a id="bio" href="/about_me/bio">Biography</a></li>
+                    <li><a id="projs" href="/about_me/projs">Projects</a></li>
+                </ul>
+            </div>
+            <!--Info buttons with dropdown menu-->
+            <div class="btn-group">
+                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Manuals, guides and tutorials <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">C and C++</a></li>
+                    <li><a href="#">HTML5 Javascript and CSS3</a></li>
+                </ul>
+            </div>
+            <!--Success buttons with dropdown menu-->
+            <div class="btn-group">
+                <button class="btn btn-default">Contact Me</span></button>
+
+            </div>
+
+        </form>
+    </div>
+{% block content %}
+{% endblock content %}
+{% block js %}
+<script src="{% static 'vendor/jquery/jquery.js' %}"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>-->
+<script src="{% static 'vendor/jquery.cookie.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.js'%}"></script>
+{% endblock js %}
+
+</body>
+</html>

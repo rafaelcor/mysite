@@ -1,0 +1,54 @@
+.div{
+	margin-top: 210px;
+	margin-left: 500px;
+}
+
+#user_entry{
+
+    width:200px;
+    margin-left: 35px;
+}
+
+#password_entry{
+
+    width:200px;
+}
+
+#login_button{
+    width: 100px;
+    margin-left: 120px;
+}
+#labelc{
+    color: #FF0000;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -50px;
+    visibility: hidden;
+}
+
+#titdiv{
+
+    text-align: center;
+    margin-top: 100px;
+
+}
+#titdiv h2{
+    font-type:Arial, Verdana;
+    font-weight: bold;
+    color: #0F037F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

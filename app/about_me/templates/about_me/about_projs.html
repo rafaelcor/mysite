@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block css %}
+{{ block.super }}
+{% endblock css %}
+<head>
+    <title>
+        {% block title %}
+            About Me - Projects
+        {% endblock %}
+    </title>
+</head>
+
+{% block content %}
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}" />
+        <div class="divc">
+            <h4><a href="">Compose - Sugar - has a release but actually is unmaintained</a></h4>
+            <h4><a href="">The_Game - OpenGL, SDL in C++ - is unmaintained</a></h4>
+            <h4><a href="http://github.com/rafaelcor/compose">Compose - Python and gtk - unmaintained</a></h4>
+            <h4><a href="http://github.com/rafaelcor/llenar_manana">Sweet OS - is under development</a></h4>
+        </div>
+{% endblock content %}
+
+{% block js %}
+{{ block.super }}
+<script src="{% static 'about_me/js/about.js' %}" type='text/javascript'></script>
+{% endblock js %}
