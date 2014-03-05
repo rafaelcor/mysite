@@ -8,7 +8,8 @@
 <head>
     <title>
         {% block title %}
-            About Me - Biography
+        {{ block.super }}
+             - About Me - Biography
         {% endblock %}
     </title>
 </head>
@@ -18,7 +19,7 @@
         <div class="divc">
             <h4>I was born the 23th July, 1998 in Uruguay.</h4>
             <h4>I started my first experiences with programmation at the age of 11, when the XO´s</h4>
-            <h4>arrive to my school class. With it, we used TurtleArt(a sugar activity as logo as)</h4>
+            <h4>arrived to my school class. With it, we used TurtleArt(a sugar activity as logo as)</h4>
             <h4>Then I </h4>
         </div>
 {% endblock content %}

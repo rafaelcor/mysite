@@ -3,13 +3,14 @@
 
 <html>
 <head>
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}Rafael's web page{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
     <link rel="stylesheet" href="{% static 'css/normalize.css'%}">
     <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'vendor/fonta-wesome/css/font-awesome.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    
     {% block css %}{% endblock css %}
 </head>
 <body>
@@ -17,11 +18,11 @@
         <form>
             <!--Default buttons with dropdown menu-->
             <div class="btn-group">
-                <button class="btn btn-default">Home</button>
+                <button onclick="dd();" class="hm btn btn-default">Home</button>
             </div>
             <!--Primary buttons with dropdown menu-->
             <div class="btn-group">
-                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">About Me <span class="caret"></span></button>
+                <button data-toggle="dropdown" class="tes1 btn btn-default dropdown-toggle">About Me <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <li><a id="bio" href="/about_me/bio">Biography</a></li>
                     <li><a id="projs" href="/about_me/projs">Projects</a></li>
@@ -29,7 +30,7 @@
             </div>
             <!--Info buttons with dropdown menu-->
             <div class="btn-group">
-                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Manuals, guides and tutorials <span class="caret"></span></button>
+                <button data-toggle="dropdown" class="tes2 btn btn-default dropdown-toggle">Manuals, guides and tutorials <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <li><a href="#">Python</a></li>
                     <li><a href="#">C and C++</a></li>
@@ -38,7 +39,7 @@
             </div>
             <!--Success buttons with dropdown menu-->
             <div class="btn-group">
-                <button class="btn btn-default">Contact Me</span></button>
+                <button class="cm btn btn-default">Contact Me</span></button>
 
             </div>
 
@@ -52,6 +53,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>-->
 <script src="{% static 'vendor/jquery.cookie.js' %}"></script>
 <script src="{% static 'vendor/bootstrap/js/bootstrap.js'%}"></script>
+<script src=" {% static 'vendor/base.js' %}"></script>
 {% endblock js %}
 
 </body>

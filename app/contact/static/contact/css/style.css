@@ -2,3 +2,19 @@
     margin-top: 30px;
     margin-left: 15px;
 }
+.send_email{
+    position: absolute;
+}
+#name_in{
+    margin-left: 15px;
+}
+
+#email_in{
+    margin-left: 10px;
+}
+.send_email #message{
+    resize: none;
+    width: 220px;
+    height: 140px;
+    margin-left: 25px;
+}

@@ -8,7 +8,8 @@
 <head>
     <title>
         {% block title %}
-            About Me - Projects
+        {{ block.super }}
+             - About Me - Projects
         {% endblock %}
     </title>
 </head>
@@ -16,14 +17,14 @@
 {% block content %}
         <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}" />
         <div class="divc">
-            <h4><a href="">Compose - Sugar - has a release but actually is unmaintained</a></h4>
-            <h4><a href="">The_Game - OpenGL, SDL in C++ - is unmaintained</a></h4>
-            <h4><a href="http://github.com/rafaelcor/compose">Compose - Python and gtk - unmaintained</a></h4>
-            <h4><a href="http://github.com/rafaelcor/llenar_manana">Sweet OS - is under development</a></h4>
+            <h4><a id='hp1' team='Ignacio_Rodriguez Rafael_Cordano' href="http://github.com/rafaelcor/compress">Compress - Sugar - has a release but actually is unmaintained</a></h4>
+            <h4><a id='hp2' team='Ezequiel_Pereira Rafael_Cordano' href="http://github.com/rafaelcor/thegame">The_Game - OpenGL, SDL in C++ - under development</a></h4>
+            <h4><a id='hp3' team='Ezequiel_Pereira Rafael_Cordano' href="http://github.com/rafaelcor/compose">Compose - Python and gtk - unmaintained</a></h4>
+            <h4><a id='hp4' team='Ezequiel_Pereira Rafael_Cordano' href="http://github.com/rafaelcor/sweet_os">Sweet OS - is under development</a></h4>
         </div>
 {% endblock content %}
 
 {% block js %}
 {{ block.super }}
-<script src="{% static 'about_me/js/about.js' %}" type='text/javascript'></script>
+<script src="{% static 'about_me/js/about_projs.js' %}" type='text/javascript'></script>
 {% endblock js %}

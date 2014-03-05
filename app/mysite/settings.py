@@ -1,5 +1,5 @@
 """
-Django settings for rh project.
+Django settings for mysite project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -25,6 +25,8 @@ SECRET_KEY = 'nu+uk5#hp#qm9c-^$7n)0yjv_s$7v0n6$9uu-ko3c9z&jk)!k_'
 DEBUG = True
 PROJECT_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
 TEMPLATE_DEBUG = True
+
+
 def rel(*x):
     return os.path.abspath(os.path.join(PROJECT_ROOT, *x))
 TEMPLATE_DIRS = (
@@ -37,7 +39,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
+    #'django.contrib.admin',
+    'admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
