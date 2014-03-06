@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    console.log('opend');
+    //console.log('opend');
     //$('.send_email').animate({ "left": "-=500px" }, "slow" );
     $('#submit').click(function(){
        try{
@@ -8,13 +8,21 @@ $(document).ready(function(){
                        'subject': $('.send_email #sub_in').val(),
                        'message': $('.send_email #message').val(),
                        'csrfmiddlewaretoken': $.cookie('csrftoken')};
-           $.post('/contact/sendmail/', mail, function(response) {// //sendmail/ == /contact/sendmail/
+           $.post('http://localhost/contact/sendmail', mail, function(response) {// //sendmail/ == /contact/sendmail/
+               alert(response);
+               if(response == 'Yes'){
+                   $('.send_email').animate({ "left": "-=500px" }, "slow" );
+               }
+               else{
+
+               }
            }, 'json');
        }
        catch(err){
            console.log(err);
        }
        $('.send_email').animate({ "left": "-=500px" }, "slow" );
+
     });
 
 });
